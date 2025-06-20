@@ -7,12 +7,12 @@ import NavBar from "./ui/NavBar";
 
 export default function App() {
   return (
+    <>
     <Routes>
       <Route path="/" element={<SignUp />} />
       <Route path="/signup" element={<SignUp />} />
       <Route path="/login" element={<Login />} />
     </Routes>
-    <>
       <NavBar />
       <div className="app-container">
         <Dashboard />

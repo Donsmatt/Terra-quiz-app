@@ -85,7 +85,7 @@ const Quiz = () => {
         handleAnswer={handleAnswer}
         selectedAnswer={selectedAnswer}
       />
-      <button onClick={nextQuestion} disabled={!selectedAnswer}>
+      <button className="next-btn" onClick={nextQuestion} disabled={!selectedAnswer}>
         {currentIndex + 1 === questions.length ? "Submit" : "Next"}
       </button>
     </div>
